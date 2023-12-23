@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <meta property="og:title" content="Ahnaf's Project Test Suitmedia" />
+    <meta
+      property="og:description"
+      content="This is for Ahnaf's Interns Test"
+    />
+    <meta
+      property="og:image"
+      src="/static/images/suitmediaaa.png"
+    />
+
+    <title>Ahnaf's Project Test Suitmedia</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='myjs.js') }}"></script>
+    <script></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="/"
+            ><img
+              src="/static/images/suitmedialogo-removebg-preview.png"
+              alt="Logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Work</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li class="active"><a href="/">Ideas</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="parallax-container">
+        <div class="rotate-image">
+          <img src="/static/images/4X.png" alt="Banner Image" />
+        </div>
+        <div class="banner-text">
+          <h1>Ideas</h1>
+          <p>Where all our great things begin</p>
+        </div>
+      </div>
+    </section>
+    <!-- sort -->
+    <section id="post-controls">
+      <div id="pagination-info">Showing 1 - 10 of 100</div>
+      <label for="per-page-select">Show per page:</label>
+      <select id="per-page-select">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>
+
+      <label for="sort-select">Sort by:</label>
+      <select id="sort-select">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+      </select>
+    </section>
+    <!-- List post -->
+    <section id="list-post">
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img
+            src="/static/images/Advertising-on-Streaming-App.png"
+            alt="Post 1 Image"
+          />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Kenali Tingkatan Influencers berdasarkan Jumlah Followers
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img src="/static/images/influencers.webp" alt="Post 1 Image" />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Jangan asal Pilih Influencers, Berikut Cara Menyusun Strategi
+            Influencers Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Repellendus magnam nobis corporis.
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img
+            src="/static/images/Advertising-on-Streaming-App.png"
+            alt="Post 1 Image"
+          />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Kenali Tingkatan Influencers berdasarkan Jumlah Followers
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img src="/static/images/influencers.webp" alt="Post 1 Image" />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Jangan asal Pilih Influencers, Berikut Cara Menyusun Strategi
+            Influencers Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Repellendus magnam nobis corporis.
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img
+            src="/static/images/Advertising-on-Streaming-App.png"
+            alt="Post 1 Image"
+          />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Kenali Tingkatan Influencers berdasarkan Jumlah Followers
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img src="/static/images/influencers.webp" alt="Post 1 Image" />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Jangan asal Pilih Influencers, Berikut Cara Menyusun Strategi
+            Influencers
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img
+            src="/static/images/Advertising-on-Streaming-App.png"
+            alt="Post 1 Image"
+          />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Kenali Tingkatan Influencers berdasarkan Jumlah Followers
+          </h2>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-thumbnail">
+          <img src="/static/images/influencers.webp" alt="Post 1 Image" />
+        </div>
+        <div class="post-details">
+          <p class="post-summary">22 DESEMBER 2023</p>
+          <h2 class="post-title">
+            Jangan asal Pilih Influencers, Berikut Cara Menyusun Strategi
+            Influencers Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Repellendus magnam nobis corporis.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div id="pagination">
+      <ul>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
